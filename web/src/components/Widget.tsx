@@ -1,10 +1,13 @@
 import { ChatCircleDots } from "phosphor-react"
 import { Popover } from "@headlessui/react"
+import { WidgetForm } from "./WidgetForm/"
 
 export function Widget() {
     return (
-        <Popover className="absolute bottom-5 right-5">
-            <Popover.Panel>Hello World</Popover.Panel>
+        <Popover className="absolute bottom-4 right-4 md:bottom-7 md:right-7 flex flex-col items-end">
+            <Popover.Panel>
+                <WidgetForm></WidgetForm>
+            </Popover.Panel>
 
             <Popover.Button className="bg-brand-500 text-white rounded-full p-2 flex items-center group">
                 <ChatCircleDots size={32} />
